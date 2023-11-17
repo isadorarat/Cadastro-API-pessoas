@@ -1,3 +1,5 @@
+const url_server = "http://localhost:3000";
+
 function cadastrar() {
     console.log('Enviando dados ao servidor...');
 
@@ -16,7 +18,7 @@ function cadastrar() {
 
 
 
-        // Faz requisição ao servidor usando o verbo POST, enviando os dados para o servidor
+    // Faz requisição ao servidor usando o verbo POST, enviando os dados para o servidore
     fetch(`${url_server}/cadastro`, {
         method: 'POST',
         headers: {
@@ -36,4 +38,11 @@ function cadastrar() {
             console.error('Erro ao enviar dados para o servidor:', error);
             // Trate os erros, se necessário
         });
-    }
+}
+function listarPessoas() {
+    fetch(`${url_server}/pessoas`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        });
+}
