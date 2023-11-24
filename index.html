@@ -24,41 +24,44 @@
     <div class="principal">
         <div class="info">
             <label for="exampleFormControlInput1">Nome</label>
-            <input type="string" class="form-control" name="nome-pessoa" placeholder="Nome completo">
+            <input type="string" class="form-control" name="nome-pessoa" placeholder="Nome completo" required minlength="3" maxlength="20">
         </div>
         <br>
         <div class="info">
             <label for="exampleFormControlInput1">CPF</label>
-            <input type="number" class="form-control" name="cpf">
+            <input type="number" class="form-control" name="cpf" required>
         </div>
         <br>
         <div class="info">
             <label for="exampleFormControlInput1">Data de Nascimento</label>
-            <input type="date" class="form-control" name="data-de-nascimento">
+            <input type="date" class="form-control" name="data-de-nascimento" required>
         </div>
         <br>
         <div class="info">
             <label for="exampleFormControlInput1">Telefone</label>
-            <input type="number" class="form-control" name="telefone" placeholder="(DDD)telefone">
+            <input type="number" class="form-control" name="telefone" placeholder="(DDD)telefone" required>
         </div>
         <br>
         <div class="info">
             <label for="exampleFormControlInput1">Endereço</label>
-            <input type="string" class="form-control" name="endereco" placeholder="R.">
+            <input type="string" class="form-control" name="endereco" placeholder="R." required>
         </div>
         <br>
         <div class="info">
             <label for="exampleFormControlInput1">Altura</label>
-            <input type="number" class="form-control" name="altura">
+            <input type="number" class="form-control" name="altura" required>
         </div>
         <br>
         <div class="info">
             <label for="exampleFormControlInput1">Peso</label>
-            <input type="number" class="form-control" name="peso">
+            <input type="number" class="form-control" name="peso" required>
         </div>
     </div>
     <br>
     <button>Cadastrar</button>
+
+
+    <script src="js/requests.js"></script>
 </body>
 
 </html>
